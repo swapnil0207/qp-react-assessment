@@ -1,1 +1,1 @@
-export {default as KPI} from './kpi'
+export { default as KPI } from "./kpi";

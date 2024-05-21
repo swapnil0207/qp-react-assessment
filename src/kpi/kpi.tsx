@@ -2,10 +2,9 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import "./kpi.css";
 import { GrInProgress } from "react-icons/gr";
 import { MdDoneAll } from "react-icons/md";
-import { GoTasklist } from "react-icons/go";
 import { FaTasks } from "react-icons/fa";
 
-const KPI = () => {
+const KPI = ({ totalTask, inProgressTask, completedTask }: any) => {
 	return (
 		<Container>
 			<Row>
@@ -16,7 +15,7 @@ const KPI = () => {
 								Total Task <FaTasks />
 							</Card.Title>
 							<div className="justify-content-end d-flex h2">
-								<b>1</b>
+								<b>{totalTask}</b>
 							</div>
 						</Card.Body>
 					</Card>
@@ -28,7 +27,7 @@ const KPI = () => {
 								In Progress <GrInProgress />
 							</Card.Title>
 							<div className="justify-content-end d-flex h2">
-								<b>2</b>
+								<b>{inProgressTask}</b>
 							</div>
 						</Card.Body>
 					</Card>
@@ -40,7 +39,7 @@ const KPI = () => {
 								Completed <MdDoneAll />
 							</Card.Title>
 							<div className="justify-content-end d-flex h2">
-								<b>3</b>
+								<b>{completedTask}</b>
 							</div>
 						</Card.Body>
 					</Card>
