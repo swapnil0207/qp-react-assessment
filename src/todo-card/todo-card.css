@@ -1,0 +1,22 @@
+.todo-card{
+    border: 2px solid silver;
+    border-radius: 30px;
+    &.done{
+        opacity: 0.4;
+    }
+}
+
+.mark-as-done-button{
+    background-color: green;
+    color:white;
+    border-radius: 0 100px;
+}
+
+.mark-as-pending-button{
+    background-color: lightgray;
+    border-radius: 0 100px;   
+}
+
+.card-icon{
+    margin-bottom: 3px;
+}
